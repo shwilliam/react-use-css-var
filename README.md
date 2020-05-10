@@ -1,4 +1,4 @@
-# React useCSSVar (--\*)
+# React useCssVar (--\*)
 
 > A tiny hook to interface with CSS custom properties
 
@@ -18,7 +18,7 @@ const App = () => {
   const [get, set] = useCssVar('--color-bg')
 
   return (
-    <main style={{backgroundColor: '--color-bg'}}>
+    <main style={{backgroundColor: 'var(--color-bg)'}}>
       <p>Current bg: {get()}</p>
 
       <button onClick={() => set('blue')}>Blue</button>
