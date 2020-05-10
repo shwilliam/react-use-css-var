@@ -8,6 +8,7 @@
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "docs:build": "typedoc --out docs --theme minimal --includeDeclarations --excludeExternals --mode file src",
+    "demo:setup": "rm -rf ./demo/src/react-use-css-var && npm run build && cp -r ./dist ./demo/src/react-use-css-var"
   },
   "files": [
     "dist/*"

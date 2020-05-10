@@ -1,0 +1,12 @@
+:root {
+  --color-bg: orange;
+}
+
+main {
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  transition: all 1s ease-in-out;
+}
