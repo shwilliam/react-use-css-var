@@ -1,0 +1,45 @@
+{
+  "name": "@shwilliam/react-css-var",
+  "version": "0.1.0",
+  "description": "Custom hook to interface with CSS custom properties",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "docs:build": "typedoc --out docs --theme minimal --includeDeclarations --excludeExternals --mode file src",
+  },
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shwilliam/react-use-css-var.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "css",
+    "css-custom-property",
+    "css-variable"
+  ],
+  "author": "William L <w-lindvall@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shwilliam/react-use-css-var/issues"
+  },
+  "homepage": "https://github.com/shwilliam/react-use-css-var#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^7.0.0",
+    "react": "^16.13.1",
+    "typedoc": "^0.17.4",
+    "typescript": "^3.6.3"
+  }
+}
