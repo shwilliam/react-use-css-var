@@ -24,7 +24,7 @@ export const useCssVar = (
   if (!window.hasOwnProperty('getComputedStyle')) return
 
   const get: TGetter = useCallback(
-    () => getComputedStyle(element).getPropertyValue(propertyName),
+    () => getComputedStyle(element).getPropertyValue(propertyName)?.trim(),
     [],
   )
   const set: TSetter = useCallback(
