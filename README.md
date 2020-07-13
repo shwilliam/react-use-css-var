@@ -5,14 +5,14 @@
 ## Installation
 
 ```shell
-npm i @shwilliam/react-use-css-var
+npm i @shwilliam/react-css-var
 ```
 
 ## Usage
 
 ```jsx
 import React, {useState} from 'react'
-import {useCssVar} from './react-use-css-var'
+import {useCssVar} from '@shwilliam/react-use-css-var'
 
 const App = () => {
   const [get, set] = useCssVar('--color-bg')
